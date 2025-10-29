@@ -142,7 +142,7 @@ spec:
 
    - Displays a summary of system health including uptime, node count, CPU/memory usage, and connection statistics.
 
-  -Shows real-time metrics such as:
+  - Shows real-time metrics such as:
 
      - Number of connected clients
 
