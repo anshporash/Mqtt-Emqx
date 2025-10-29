@@ -104,5 +104,34 @@ spec:
      Kubectl apply -f deployment.yaml
      kubectl apply -f service.yaml
  ```
+---
+## Step 5: Verify Deployment 
+ ```bash
+    kubectl get pods -n emqx
+    kubectl get svc -n emqx 
+ ```
+- You should see:
+   - 2Pods in Running state
+   - LoadBalancer EXTERNAL-IP after a few seconds/minutes
 
-  
+## Step 6: Test MQTT Broker 
+ - Once Loadbalancer IP is available, test with any MQTT client with the help of loadBalancer ip so u can connect broker with that IP and subscriber and pulisher communicate.
+   ---
+
+   # EMQX Dashboard
+   - The EMQX Dashboard is a powerful web-based interface for managing,monitoring,and configuring your MQTT broker cluster. It provides real-time visibility into your EMQX deployment and allows administrators to perform most broker management task visually without using CLI commands.
+  ## Accessing the Dashboard
+  - After deploying EMQX (for example on kuberentes with a LoadBalancer), the dashboard is available on `port 18083`.
+  - You can open it in a web browser:
+   ```bash
+    http://<EMQX-EXTERNAL-IP>:18083
+  ```
+
+ ### Default credentials:
+ - Username: `admin`
+ - Password: `public`
+- (You can change credentials in the dashboard or via Helm values).
+    
+
+
+   
