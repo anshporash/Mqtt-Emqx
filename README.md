@@ -148,39 +148,39 @@ spec:
 
      - Incoming/outgoing message rates
 
-Subscription counts
+     - Subscription counts
 
-Cluster node status
+     - Cluster node status
 
 2. Clients
 
-Lists all currently connected MQTT clients.
+   - Lists all currently connected MQTT clients.
 
-Shows client information:
+   - Shows client information:
 
-Client ID, username, IP address
+    - Client ID, username, IP address
 
-Connection time and status
+    - Connection time and status
 
-Subscriptions and message statistics
+    -  Subscriptions and message statistics
 
-Admins can disconnect, ban, or inspect individual clients.
+    - Admins can disconnect, ban, or inspect individual clients.
 
-3. Subscriptions
+3. **Subscriptions**
 
-Displays all MQTT topics that clients have subscribed to.
+    -  Displays all MQTT topics that clients have subscribed to.
 
-Shows which clients are subscribed to which topics and their QoS (Quality of Service) levels.
+    - Shows which clients are subscribed to which topics and their QoS (Quality of Service) levels.
 
-Useful for debugging message routing and verifying topic structures.
+    - Useful for debugging message routing and verifying topic structures.
 
 4. Topics & Messages
 
-Provides insights into MQTT traffic across the broker.
+    - Provides insights into MQTT traffic across the broker.
 
-Shows message throughput, dropped messages, and topic-level statistics.
+    - Shows message throughput, dropped messages, and topic-level statistics.
 
-You can verify if messages are being published and delivered correctly.
+    - You can verify if messages are being published and delivered correctly.
 
 5. Cluster Management
 
