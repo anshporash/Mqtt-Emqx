@@ -134,19 +134,19 @@ spec:
 
 ---
 
-🖥️ Dashboard Features
+##🖥️ Dashboard Features
 
-The EMQX Dashboard is divided into several key sections, each giving insight into a different part of your MQTT broker and cluster.
+-The EMQX Dashboard is divided into several key sections, each giving insight into a different part of your MQTT broker and cluster.
 
-1. Overview (Home)
+-1. Overview (Home)
 
-Displays a summary of system health including uptime, node count, CPU/memory usage, and connection statistics.
+   - Displays a summary of system health including uptime, node count, CPU/memory usage, and connection statistics.
 
-Shows real-time metrics such as:
+  -Shows real-time metrics such as:
 
-Number of connected clients
+     - Number of connected clients
 
-Incoming/outgoing message rates
+     - Incoming/outgoing message rates
 
 Subscription counts
 
