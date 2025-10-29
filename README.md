@@ -99,5 +99,10 @@ spec:
     targetPort: 18083
 
  ```
+### Apply all files:
+ ```bash
+     Kubectl apply -f deployment.yaml
+     kubectl apply -f service.yaml
+ ```
 
   
