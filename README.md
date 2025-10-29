@@ -134,9 +134,9 @@ spec:
 
 ---
 
-#🖥️ Dashboard Features
+# 🖥️ Dashboard Features
 
--The EMQX Dashboard is divided into several key sections, each giving insight into a different part of your MQTT broker and cluster.
+- The EMQX Dashboard is divided into several key sections, each giving insight into a different part of your MQTT broker and cluster.
 
 -1. Overview (Home)
 
