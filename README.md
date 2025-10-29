@@ -134,7 +134,7 @@ spec:
 
 ---
 
-##🖥️ Dashboard Features
+#🖥️ Dashboard Features
 
 -The EMQX Dashboard is divided into several key sections, each giving insight into a different part of your MQTT broker and cluster.
 
@@ -158,11 +158,11 @@ spec:
 
    - Shows client information:
 
-    - Client ID, username, IP address
+        - Client ID, username, IP address
 
-    - Connection time and status
+        - Connection time and status
 
-    -  Subscriptions and message statistics
+        -  Subscriptions and message statistics
 
     - Admins can disconnect, ban, or inspect individual clients.
 
@@ -184,25 +184,25 @@ spec:
 
 5. Cluster Management
 
-Displays all nodes in the EMQX cluster.
+    - Displays all nodes in the EMQX cluster.
 
-Shows node roles, status, uptime, and synchronization state.
+    - Shows node roles, status, uptime, and synchronization state.
 
-Allows manual node management (join/leave) if needed.
+    - Allows manual node management (join/leave) if needed.
 
-Confirms that clustering is functioning correctly when running multiple EMQX pods in Kubernetes.
+    - Confirms that clustering is functioning correctly when running multiple EMQX pods in Kubernetes.
 
 6. Rule Engine
 
-A no-code interface for defining rules to process MQTT messages.
+    - A no-code interface for defining rules to process MQTT messages.
 
-You can trigger actions based on message content or topic, such as:
+    - You can trigger actions based on message content or topic, such as:
 
-Forwarding messages to databases (MySQL, PostgreSQL, MongoDB)
+    - Forwarding messages to databases (MySQL, PostgreSQL, MongoDB)
 
-Sending data to Kafka, Redis, or webhooks
+    - Sending data to Kafka, Redis, or webhooks
 
-Rules are created visually using SQL-like expressions.
+    - Rules are created visually using SQL-like expressions.
 
 7. Authentication & Authorization
 
