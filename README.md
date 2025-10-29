@@ -7,7 +7,7 @@
  ```bash
     sudo kubectl create namespace emqx
  ```
-## Step 1: Create Deployment
+## Step 2: Create Deployment
 - Create a file named deployment.yaml
  ```bash
    apiVersion: apps/v1
@@ -49,5 +49,12 @@ spec:
           value: "8083"
  
  ```  
+---
+
+## Step 3: Create Headless service(for internal clustering)
+ - Create a file named `service.yaml`:
+ ```bash
+    
+ ```
 
   
