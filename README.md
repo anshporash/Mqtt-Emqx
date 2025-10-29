@@ -131,6 +131,107 @@ spec:
  - Username: `admin`
  - Password: `public`
 - (You can change credentials in the dashboard or via Helm values).
+
+---
+
+🖥️ Dashboard Features
+
+The EMQX Dashboard is divided into several key sections, each giving insight into a different part of your MQTT broker and cluster.
+
+1. Overview (Home)
+
+Displays a summary of system health including uptime, node count, CPU/memory usage, and connection statistics.
+
+Shows real-time metrics such as:
+
+Number of connected clients
+
+Incoming/outgoing message rates
+
+Subscription counts
+
+Cluster node status
+
+2. Clients
+
+Lists all currently connected MQTT clients.
+
+Shows client information:
+
+Client ID, username, IP address
+
+Connection time and status
+
+Subscriptions and message statistics
+
+Admins can disconnect, ban, or inspect individual clients.
+
+3. Subscriptions
+
+Displays all MQTT topics that clients have subscribed to.
+
+Shows which clients are subscribed to which topics and their QoS (Quality of Service) levels.
+
+Useful for debugging message routing and verifying topic structures.
+
+4. Topics & Messages
+
+Provides insights into MQTT traffic across the broker.
+
+Shows message throughput, dropped messages, and topic-level statistics.
+
+You can verify if messages are being published and delivered correctly.
+
+5. Cluster Management
+
+Displays all nodes in the EMQX cluster.
+
+Shows node roles, status, uptime, and synchronization state.
+
+Allows manual node management (join/leave) if needed.
+
+Confirms that clustering is functioning correctly when running multiple EMQX pods in Kubernetes.
+
+6. Rule Engine
+
+A no-code interface for defining rules to process MQTT messages.
+
+You can trigger actions based on message content or topic, such as:
+
+Forwarding messages to databases (MySQL, PostgreSQL, MongoDB)
+
+Sending data to Kafka, Redis, or webhooks
+
+Rules are created visually using SQL-like expressions.
+
+7. Authentication & Authorization
+
+Configure how clients are authenticated (username/password, JWT, LDAP, etc.)
+
+Manage Access Control Lists (ACLs) for controlling who can publish or subscribe to certain topics.
+
+View and test authentication results in real time.
+
+8. Monitoring
+
+Built-in metrics charts for:
+
+Connections
+
+Messages per second
+
+System resource utilization
+
+Integrates with Prometheus and Grafana for advanced monitoring and alerting.
+
+9. Admin Settings
+
+Manage dashboard users and roles.
+
+Change passwords, create new users, or restrict permissions.
+
+Configure TLS certificates for secure (HTTPS) dashboard access.
+ 
     
 
 
