@@ -198,39 +198,39 @@ spec:
 
     - You can trigger actions based on message content or topic, such as:
 
-    - Forwarding messages to databases (MySQL, PostgreSQL, MongoDB)
+         - Forwarding messages to databases (MySQL, PostgreSQL, MongoDB)
 
-    - Sending data to Kafka, Redis, or webhooks
+         - Sending data to Kafka, Redis, or webhooks
 
     - Rules are created visually using SQL-like expressions.
 
 7. Authentication & Authorization
 
-Configure how clients are authenticated (username/password, JWT, LDAP, etc.)
+    -  Configure how clients are authenticated (username/password, JWT, LDAP, etc.)
 
-Manage Access Control Lists (ACLs) for controlling who can publish or subscribe to certain topics.
+    - Manage Access Control Lists (ACLs) for controlling who can publish or subscribe to certain topics.
 
-View and test authentication results in real time.
+    - View and test authentication results in real time.
 
 8. Monitoring
 
-Built-in metrics charts for:
+    - Built-in metrics charts for:
 
-Connections
+       - Connections
 
-Messages per second
+       - Messages per second
 
-System resource utilization
+       - System resource utilization
 
-Integrates with Prometheus and Grafana for advanced monitoring and alerting.
+    - Integrates with Prometheus and Grafana for advanced monitoring and alerting.
 
 9. Admin Settings
 
-Manage dashboard users and roles.
+    - Manage dashboard users and roles.
 
-Change passwords, create new users, or restrict permissions.
+    - Change passwords, create new users, or restrict permissions.
 
-Configure TLS certificates for secure (HTTPS) dashboard access.
+    - Configure TLS certificates for secure (HTTPS) dashboard access.
  
     
 
