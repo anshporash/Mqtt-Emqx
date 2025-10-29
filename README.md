@@ -72,5 +72,13 @@ spec:
     port: 18083
 
  ```
+---
+
+## Step 4: Expose with a LoadBalancer (External Access) 
+- Add a LoadBalancer service to expose EMQX externally:
+
+ ```bash
+    sudo kubectl create namespace emqx
+ ```
 
   
