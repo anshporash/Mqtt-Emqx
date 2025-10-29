@@ -78,7 +78,26 @@ spec:
 - Add a LoadBalancer service to expose EMQX externally:
 
  ```bash
-    sudo kubectl create namespace emqx
+    apiVersion: v1
+kind: Service
+metadata:
+  name: emqx-lb
+  namespace: emqx
+spec:
+  type: LoadBalancer
+  selector:
+    app: emqx
+  ports:
+  - name: mqtt
+    port: 1883
+    targetPort: 1883
+  - name: websocket
+    port: 8083
+    targetPort: 8083
+  - name: dashboard
+    port: 18083
+    targetPort: 18083
+
  ```
 
   
