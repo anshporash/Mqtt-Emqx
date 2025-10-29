@@ -138,7 +138,7 @@ spec:
 
 - The EMQX Dashboard is divided into several key sections, each giving insight into a different part of your MQTT broker and cluster.
 
--1. Overview (Home)
+1. Overview (Home)
 
    - Displays a summary of system health including uptime, node count, CPU/memory usage, and connection statistics.
 
