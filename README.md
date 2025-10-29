@@ -138,7 +138,7 @@ spec:
 
 - The EMQX Dashboard is divided into several key sections, each giving insight into a different part of your MQTT broker and cluster.
 
-1. Overview (Home)
+1. **Overview** (Home)
 
    - Displays a summary of system health including uptime, node count, CPU/memory usage, and connection statistics.
 
@@ -152,7 +152,7 @@ spec:
 
      - Cluster node status
 
-2. Clients
+2. **Clients**
 
    - Lists all currently connected MQTT clients.
 
@@ -174,7 +174,7 @@ spec:
 
     - Useful for debugging message routing and verifying topic structures.
 
-4. Topics & Messages
+4. **Topics** & **Messages**
 
     - Provides insights into MQTT traffic across the broker.
 
@@ -182,7 +182,7 @@ spec:
 
     - You can verify if messages are being published and delivered correctly.
 
-5. Cluster Management
+5. **Cluster Management**
 
     - Displays all nodes in the EMQX cluster.
 
@@ -192,7 +192,7 @@ spec:
 
     - Confirms that clustering is functioning correctly when running multiple EMQX pods in Kubernetes.
 
-6. Rule Engine
+6. **Rule Engine**
 
     - A no-code interface for defining rules to process MQTT messages.
 
@@ -204,7 +204,7 @@ spec:
 
     - Rules are created visually using SQL-like expressions.
 
-7. Authentication & Authorization
+7. **Authentication & Authorization**
 
     -  Configure how clients are authenticated (username/password, JWT, LDAP, etc.)
 
@@ -212,7 +212,7 @@ spec:
 
     - View and test authentication results in real time.
 
-8. Monitoring
+8. **Monitoring**
 
     - Built-in metrics charts for:
 
@@ -224,7 +224,7 @@ spec:
 
     - Integrates with Prometheus and Grafana for advanced monitoring and alerting.
 
-9. Admin Settings
+9. **Admin Settings**
 
     - Manage dashboard users and roles.
 
