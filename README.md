@@ -10,7 +10,44 @@
 ## Step 1: Create Deployment
 - Create a file named deployment.yaml
  ```bash
-    
+   apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: emqx
+  namespace: emqx
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: emqx
+  template:
+    metadata:
+      labels:
+        app: emqx
+    spec:
+      containers:
+      - name: emqx
+        image: emqx/emqx:5.2.1
+        ports:
+        - containerPort: 1883  # MQTT
+        - containerPort: 8083  # WebSocket
+        - containerPort: 18083 # Dashboard
+        env:
+        - name: EMQX_NODE__NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+        - name: EMQX_CLUSTER__DISCOVERY
+          value: dns
+        - name: EMQX_CLUSTER__DNS__NAME
+          value: emqx-headless.emqx.svc.cluster.local
+        - name: EMQX_CLUSTER__DNS__APP
+          value: emqx
+        - name: EMQX_LISTENER__TCP__EXTERNAL
+          value: "1883"
+        - name: EMQX_LISTENER__WS__EXTERNAL
+          value: "8083"
+ 
  ```  
 
   
