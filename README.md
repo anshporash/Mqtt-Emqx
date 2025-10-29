@@ -54,7 +54,23 @@ spec:
 ## Step 3: Create Headless service(for internal clustering)
  - Create a file named `service.yaml`:
  ```bash
-    
+    apiVersion: v1
+kind: Service
+metadata:
+  name: emqx-headless
+  namespace: emqx
+spec:
+  clusterIP: None
+  selector:
+    app: emqx
+  ports:
+  - name: mqtt
+    port: 1883
+  - name: websocket
+    port: 8083
+  - name: dashboard
+    port: 18083
+
  ```
 
   
